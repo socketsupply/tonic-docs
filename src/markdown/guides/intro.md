@@ -12,7 +12,7 @@
 <br/>
 
   <ul class="checklist">
-    <li>1 file. 1 class. ~350 lines of code.</li>
+    <li>1 file. 1 class. ~350 <a href="https://github.com/optoolco/tonic">lines of code</a>.</li>
     <li>No build tools required.</li>
     <li>Native web components.</li>
     <li>Ideal for JAM stacks.</li>

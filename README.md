@@ -3,7 +3,7 @@
 <p align="center">
   <b>Documentation</b>
   <br/>
-  https://tonic.technology
+  https://tonicframework.dev
 </p>
 <br/>
 <br/>
