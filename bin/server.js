@@ -55,7 +55,7 @@ O+ScVeKng9YA3ju+83M4dr8=
 }
 
 // eslint-disable-next-line
-const __dirname = path.dirname(import.meta.url).replace('file:', '')
+const __dirname = path.dirname(new URL(import.meta.url).pathname)
 const opts = { root: path.join(__dirname, '..', 'build') }
 
 https.createServer(certs, async (req, res) => {

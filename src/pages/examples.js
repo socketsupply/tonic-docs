@@ -5,7 +5,7 @@ import Tonic from 'tonic-ssr'
 import head from './mixins/head.js'
 
 const base = path.join('..', 'markdown', 'components')
-const __dirname = path.dirname(import.meta.url).replace('file:', '')
+const __dirname = path.dirname(new URL(import.meta.url).pathname)
 
 class ExamplePage extends Tonic {
   async getComponentDocs () {
@@ -56,11 +56,11 @@ class ExamplePage extends Tonic {
       <html>
         <head>
           ${Tonic.unsafeRawString(head({
-            title: 'Tonic - Component Examples',
-            description: 'Component Examples',
+            title: 'Tonic',
+            description: 'A component framework',
             siteName: 'Tonic Framework',
-            image: 'https://optoolco.github.io/components/tonic_preview.png',
-            url: 'https://tonic.technology'
+            image: 'https://tonicframework.dev/images/tonic_preview.png',
+            url: 'https://tonicframework.dev'
           }))}
 
           <style-module src="src/styles/index.less">

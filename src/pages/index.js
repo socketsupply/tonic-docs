@@ -9,11 +9,11 @@ class MainPage extends Tonic {
       <html>
         <head>
           ${Tonic.unsafeRawString(head({
-            title: 'Tonic - Component Based Architecture',
-            description: 'Component Based Architecture',
+            title: 'Tonic',
+            description: 'A component framework',
             siteName: 'Tonic Framework',
-            image: 'https://optoolco.github.io/components/tonic_preview.png',
-            url: 'https://tonic.technology'
+            image: 'https://tonicframework.dev/images/tonic_preview.png',
+            url: 'https://tonicframework.dev'
           }))}
 
           <style-module src="src/styles/index.less">
