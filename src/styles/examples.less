@@ -4,9 +4,14 @@ div.example {
   position: relative;
   width: 100%;
   padding-right: 25%;
-  min-height: 64px;
+  min-height: 82px;
   max-height: 512px;
   display: grid;
+  gap: 10px;
+
+  tonic-form {
+    align-items: flex-end;
+  }
 }
 
 div.example > tonic-button {
@@ -81,16 +86,20 @@ tonic-button.outline {
 table {
   width: 100%;
   text-align: left;
+  border: 1px solid blue;
   margin-bottom: 15px;
   border-collapse: collapse;
   border: 1px solid var(--tonic-border);
 }
 
-@media (max-width: 850px) {
-  table {
-    display: block;
-    max-width: 100%;
-    overflow: auto;
+main#examples {
+  @media (max-width: 850px) {
+    table, h2, h3, h4, pre {
+      display: none;
+      width: 200px;
+      max-width: 100%;
+      overflow: auto;
+    }
   }
 }
 
@@ -127,6 +136,11 @@ td:last-of-type {
 
 tonic-accordion {
   width: 100%;
+  margin-bottom: 20px;
+
+  .tonic--accordion-panel {
+    line-height: 1.4em;
+  }
 }
 
 tonic-badge {
@@ -175,6 +189,12 @@ tonic-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+
+tonic-loader {
+  border: 1px solid var(--tonic-info);
+  width: 75%;
+  position: relative;
 }
 
 .loader-content {
@@ -235,17 +255,17 @@ tonic-router.tonic--show {
 }
 
 tonic-tabs .tonic--tab {
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   margin-right: 10px;
   display: inline-block;
 }
 
 tonic-tabs .tonic--tab:focus {
-  border-bottom: 2px solid var(--tonic-accent);
+  border-bottom: 1px solid var(--tonic-accent);
 }
 
 tonic-tabs .tonic--tab[aria-selected="true"] {
-  border-bottom: 2px solid var(--tonic-accent);
+  border-bottom: 1px solid var(--tonic-accent);
 }
 
 tonic-tab-panel {

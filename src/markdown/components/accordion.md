@@ -3,7 +3,7 @@ The `Accordion` component creates a set of interactive headings that hide and sh
 
 ## Demo
 
-<div class="example">
+<div class="example accordion">
   <tonic-accordion id="accordion-a">
     <tonic-accordion-section
       name="accordion-test-1"

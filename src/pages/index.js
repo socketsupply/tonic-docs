@@ -42,7 +42,7 @@ class MainPage extends Tonic {
             </toc-nav>
           </aside>
 
-          <main>
+          <main id="main">
             <markdown-module id="intro" src="src/markdown/guides/intro.md"></markdown-module>
             <markdown-module id="gettingstarted" src="src/markdown/guides/gettingstarted.md"></markdown-module>
             <markdown-module id="props" src="src/markdown/guides/props.md"></markdown-module>

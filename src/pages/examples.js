@@ -67,9 +67,6 @@ class ExamplePage extends Tonic {
           </style-module>
         </head>
 
-        <tonic-sprite>
-        </tonic-sprite>
-
         <body>
           <aside>
             <toc-nav>
@@ -84,8 +81,8 @@ class ExamplePage extends Tonic {
             </toc-nav>
           </aside>
 
-          <main>
-            <a class="logo" href="https://github.com/optoolco/tonic">
+          <main id="examples">
+            <a class="logo" href="/">
               <svg>
                 <use xlink:href="images/logo.svg#tonic_logo">
               </svg>
@@ -105,6 +102,9 @@ class ExamplePage extends Tonic {
             keep-names=${true}
             sourcemap="inline">
           </js-bundle>
+
+          <tonic-sprite>
+          </tonic-sprite>
 
         </body>
       </html>

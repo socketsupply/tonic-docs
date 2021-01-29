@@ -58,6 +58,7 @@ body {
   display: grid;
   grid-template-columns: 25% 75%;
   line-height: 18px;
+  font-size: 1em;
   background: var(--tonic-window);
   color: var(--tonic-primary);
 
@@ -92,11 +93,7 @@ body {
     border-left: 2px solid;
     padding-left: 10px;
     margin-left: 10px;
-
-    p, code {
-      line-height: 22px;
-      font-size: 12px;
-    }
+    color: var(--tonic-info);
   }
 
   code, pre {
@@ -106,7 +103,7 @@ body {
     border: 1px solid var(--tonic-border);
   }
 
-  pre > code {
+  pre code {
     border: none;
   }
 
@@ -124,8 +121,13 @@ body {
     grid-area: 1 / 1;
   }
 
+  table {
+    display: block;
+    overflow: auto;
+    max-width: 100%
+  }
+
   p {
-    font-size: 14px;
     line-height: 26px;
   }
 
@@ -199,7 +201,7 @@ body {
     }
   }
 
-  > main {
+  main#main, main#examples {
     grid-area: 1 / 2;
     padding: 50px 15% 0 15%;
     padding-bottom: 100px;
