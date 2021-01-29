@@ -20,6 +20,6 @@
     "less": "^4.1.0",
     "less-plugin-clean-css": "^1.5.1",
     "marked": "^1.2.8",
-    "tonic-ssr": "^1.0.0"
+    "tonic-ssr": "^1.1.0"
   }
 }
