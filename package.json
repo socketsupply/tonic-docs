@@ -13,8 +13,11 @@
   "dependencies": {
     "@optoolco/components": "^12.2.1",
     "@optoolco/tonic": "^13.3.0",
+    "chart.js": "^2.9.4"
+  },
+  "devDependencies": {
     "@pre-bundled/send": "^0.16.2-patch-1",
-    "chart.js": "^2.9.4",
+    "clean-css": "^4.2.3",
     "esbuild": "^0.8.36",
     "highlight.js": "^10.5.0",
     "less": "^4.1.0",
