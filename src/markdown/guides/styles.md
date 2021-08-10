@@ -34,7 +34,7 @@ class MyGreeting extends Tonic {
 ```
 
 ### Option 2. Dynamic Stylesheets
-The `stylesheet()` method will add a styleaheet to your compoonent.
+The `stylesheet()` method will add a stylesheet to your component.
 
 ```js
 class MyGreeting extends Tonic {
@@ -53,7 +53,7 @@ class MyGreeting extends Tonic {
 ```
 
 ### Option 3. Static Stylesheets
-The static `stylesheet()` method will add a styleaheet to the document,
+The static `stylesheet()` method will add a stylesheet to the document,
 but only once.
 
 ```js
