@@ -2,7 +2,7 @@
 
 `this.state` is just a plain-old javascript object on `Tonic`. It will help
 persist state for components when they are re-rendered. Any element that has
-an id can use state.
+an ID can use state.
 
 ```js
 //
