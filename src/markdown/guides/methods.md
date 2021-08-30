@@ -30,7 +30,7 @@ class MyComponent extends Tonic {
 }
 ```
 
-After the component is created, the method `myMethod` method can be called.
+After the component is created, the method `myMethod` can be called.
 
 ```js
 document.getElementById('foo').myMethod(42)
