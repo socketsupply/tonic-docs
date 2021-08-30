@@ -94,7 +94,7 @@ The above compoent renders the following output.
 
 ### Updating properties
 
-There is no evidence that Virtual DOMs improve performance accross a broad set
+There is no evidence that Virtual DOMs improve performance across a broad set
 of use cases, but it's certain that they greatly increase complexity. Tonic doesn't
 use them. Instead, we recommend `incremental updates`. Simply put, you re-render a
 component when you think the time is right. The rule of thumb is to only re-render
