@@ -78,7 +78,7 @@ class MyComponent extends Tonic {
 }
 ```
 
-The above compoent renders the following output.
+The above component renders the following output.
 
 ```html
 <my-component>
