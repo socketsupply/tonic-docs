@@ -1,11 +1,10 @@
-import fs from 'node:fs/promises'
-import path from 'node:path'
+import fs from 'fs'
+import path from 'path'
 
 import Tonic from 'tonic-ssr'
-import less from 'less'
-import CleanCSS from 'less-plugin-clean-css'
+import CleanCSS from 'clean-css'
 
-const cleanCSS = new CleanCSS({ advanced: true })
+const minifier = new CleanCSS({})
 
 const closest = (node, fn) => {
   while (node.parentNode) {
@@ -43,18 +42,26 @@ export default class StyleModule extends Tonic {
 
     try {
       const location = path.resolve(this.props.src)
-      const s = await fs.readFile(location, 'utf8')
+      let s = await fs.promises.readFile(location, 'utf8')
 
-      const result = await less.render(s, {
-        paths: path.dirname(location),
-        plugins: [cleanCSS]
+      //
+      // make @import path("...") a compile time directive
+      //
+      s = s.replace(/@import path\("(.*)\"\);/g, (_, p) => {
+        const r = path.resolve(path.dirname(location), p)
+
+        try {
+          return fs.readFileSync(r, 'utf8')
+        } catch (err) {
+          return `// Failed to import ${p}: ${err.message}`
+        }
       })
 
-      return this.html`${Tonic.unsafeRawString(result.css)}`
+      const result = minifier.minify(s)
+
+      return this.html`${Tonic.unsafeRawString(result.styles)}`
     } catch (err) {
-      return this.html`
-        Unable to parse PostCSS (sugarss) (${err.message}).
-      `
+      return this.html`${err.message}`
     }
   }
 }

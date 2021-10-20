@@ -16,7 +16,7 @@ class MainPage extends Tonic {
             url: 'https://tonicframework.dev'
           }))}
 
-          <style-module src="src/styles/index.less">
+          <style-module src="src/styles/index.css">
           </style-module>
         </head>
 
