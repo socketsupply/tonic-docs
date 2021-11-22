@@ -1,0 +1,347 @@
+.example {
+  position: relative;
+  width: 100%;
+  padding-right: 25%;
+  min-height: 82px;
+  max-height: 512px;
+  display: grid;
+  gap: 10px;
+}
+
+.example tonic-form {
+  align-items: flex-end;
+}
+
+.example tonic-button {
+  margin: 20px 20px 0px 0;
+}
+
+.example.full-width {
+  padding-right: 0;
+}
+
+.example .header {
+  font: 13px/16px var(--tonic-subheader);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 10px 10px 10px;
+  background-color: var(--tonic-background);
+  border-bottom: 1px solid var(--tonic-border);
+}
+
+.example .content {
+  max-width: 450px;
+  padding: 15px;
+}
+
+.example.buttons {
+  grid-template-columns: 1fr 1fr;
+}
+
+tonic-button.danger {
+  --tonic-button-text: rgba(255, 255, 255, 1);
+  --tonic-button-background: rgba(240, 100, 83, 1);
+  --tonic-button-background-hover: rgba(255, 80, 55, 1);
+  --tonic-button-background-focus: rgba(220, 80, 60, 1);
+}
+
+tonic-button.outline {
+  --tonic-button-text: var(--tonic-primary);
+  --tonic-button-background: transparent;
+  --tonic-button-background-hover: var(--tonic-primary);
+  --tonic-button-background-focus: transparent;
+
+tonic-button.outline button {
+  border-color: var(--tonic-primary);
+  border-width: 1px !important;
+
+tonic-button.outline button:focus {
+  border-width: 2px !important;
+}
+
+tonic-button.outline button:focus:hover {
+  --tonic-button-text: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 850px) {
+  div.example {
+    padding-right: 0;
+  }
+  div.example ~ h2,
+  div.example ~ h3,
+  div.example ~ h4,
+  div.example ~ p,
+  div.example ~ code,
+  div.example ~ pre,
+  div.example ~ table {
+    display: none;
+  }
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border: 1px solid blue;
+  margin-bottom: 15px;
+  border-collapse: collapse;
+  border: 1px solid var(--tonic-border);
+}
+
+@media (max-width: 850px) {
+  main#examples table,
+  main#examples h2,
+  main#examples h3,
+  main#examples h4,
+  main#examples pre {
+    display: none;
+    width: 200px;
+    max-width: 100%;
+    overflow: auto;
+  }
+}
+
+th {
+  font: 13px/16px var(--tonic-subheader);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 10px 9px 10px;
+  background-color: var(--tonic-background);
+  border-bottom: 1px solid var(--tonic-border);
+  border-right: 1px solid var(--tonic-border);
+}
+
+td {
+  line-height: 22px;
+  padding: 15px;
+  border-bottom: 1px solid var(--tonic-border);
+}
+
+td:not(:first-of-type) {
+  border-left: 1px solid var(--tonic-border);
+}
+
+tr:last-of-type td {
+  border-bottom: 0;
+}
+
+td:last-of-type {
+  border-right: 0;
+}
+
+/* Component Styles */
+
+tonic-accordion {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+tonic-accordion .tonic--accordion-panel {
+  line-height: 1.4em;
+}
+
+tonic-badge {
+  display: inline-block;
+}
+
+tonic-button#tonic-button-example-4 {
+  width: 30px;
+  height: 30px;
+}
+
+show-random {
+  display: grid;
+  grid-template-rows: 44px 1fr 80px;
+  grid-template-columns: 1fr;
+}
+
+show-random header {
+  line-height: 44px;
+  text-align: center;
+  color: var(--tonic-medium);
+  display: block;
+}
+
+show-random main {
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+
+show-random footer {
+  text-align: center;
+  background-color: var(--tonic-window);
+  padding: 16px;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+#tonic-input-state {
+  display: inline-block;
+  padding-top: 15px;
+}
+
+tonic-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+tonic-loader {
+  border: 1px solid var(--tonic-info);
+  width: 75%;
+  position: relative;
+}
+
+.loader-content {
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+
+read-wikipedia h3 {
+  margin: 0;
+}
+
+read-wikipedia header {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+}
+
+read-wikipedia main {
+  padding: 40px 20px;
+  position: absolute;
+  text-align: left;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  overflow: scroll;
+}
+
+read-wikipedia footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70px;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid var(--tonic-border);
+}
+
+tonic-router {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+tonic-router.tonic--show {
+  display: block;
+  margin: 20px 0 6px;
+  padding-top: 20px;
+  border-top: 1px solid var(--tonic-border);
+}
+
+#tonic-router-select {
+  display: inline-block;
+}
+
+tonic-tabs a.tonic--tab {
+  border-bottom: 1px solid transparent;
+  margin: 0;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+tonic-tabs a.tonic--tab:focus {
+  border-bottom: 1px solid var(--tonic-accent);
+}
+
+tonic-tabs a.tonic--tab[aria-selected="true"] {
+  border-bottom: 1px solid var(--tonic-accent);
+}
+
+tonic-tab-panel {
+  flex-basis: 100%;
+  padding: 15px 0;
+}
+
+#tonic-tooltip-example {
+  width: fit-content;
+}
+
+tonic-tooltip .tonic--tooltip {
+  padding: 40px 10px;
+}
+
+body main div.example .content.windowed-example {
+  max-width: initial;
+  padding: 0;
+  position: relative;
+  height: 330px;
+}
+
+example-windowed {
+  height: 300px;
+}
+
+example-windowed .th {
+  background: var(--tonic-border);
+}
+
+example-windowed .th,
+example-windowed .tr {
+  height: 30px;
+  display: flex;
+  overflow: hidden;
+  border-bottom: 1px solid var(--tonic-border);
+}
+
+example-windowed .tr:hover {
+  background: var(--tonic-accent);
+  color: #fff;
+  cursor: default;
+}
+
+example-windowed .td {
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100px;
+  font-family: var(--tonic-monospace);
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  flex-basis: 33.3%;
+  padding: 0 4px;
+}
+
+#click-to-load {
+  position: absolute;
+  display: flex;
+  left: 0;
+  right: 0;
+  background: var(--tonic-window);
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 1.5s;
+}
+
+#click-to-load span {
+  margin: auto;
+}
+
+#click-to-load.hidden {
+  opacity: 0;
+  z-index: -1;
+}
