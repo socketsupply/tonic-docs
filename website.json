@@ -16,8 +16,8 @@
         "value": true
       },
       "customLocalServer": {
-        "enabled": false,
-        "value": ""
+        "enabled": true,
+        "value": "node ./bin/loader.js"
       },
       "apiRoute": {
         "value": ""
@@ -142,6 +142,57 @@
     "created": false
   },
   "633075417262": {
+    "provider": "aws",
+    "spa": "",
+    "lastDeployed": null,
+    "properties": {
+      "relativeFolder": {
+        "value": [
+          ".."
+        ],
+        "deployed": false
+      },
+      "cache": {
+        "value": 7800,
+        "deployed": false
+      },
+      "gzip": {
+        "value": true,
+        "deployed": false
+      },
+      "customLocalServer": {
+        "enabled": false,
+        "value": "",
+        "deployed": false
+      },
+      "apiRoute": {
+        "value": "",
+        "deployed": false
+      },
+      "apiRouteDestination": {
+        "value": null,
+        "deployed": false
+      },
+      "predeploy": {
+        "value": "",
+        "deployed": false
+      },
+      "bucketName": {
+        "value": "",
+        "deployed": false
+      },
+      "bucketRegion": {
+        "value": "",
+        "deployed": false
+      },
+      "domain": {
+        "value": "",
+        "deployed": false
+      }
+    },
+    "created": false
+  },
+  "104940042594": {
     "provider": "aws",
     "spa": "",
     "lastDeployed": null,

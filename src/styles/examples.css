@@ -150,6 +150,11 @@ tonic-button#tonic-button-example-4 {
   height: 30px;
 }
 
+.tonic--dialog,
+.tonic--dialog--overlay {
+  position: fixed !important;
+}
+
 show-random {
   display: grid;
   grid-template-rows: 44px 1fr 80px;
