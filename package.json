@@ -20,7 +20,7 @@
     "clean-css": "^4.2.3",
     "esbuild": "^0.8.36",
     "highlight.js": "^10.5.0",
-    "marked": "^2.0.0",
+    "marked": "^4.0.10",
     "tonic-ssr": "^1.1.0"
   }
 }
