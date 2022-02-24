@@ -1,7 +1,7 @@
 import esbuild from 'esbuild'
 import Tonic from 'tonic-ssr'
 
-export default class JsBundle extends Tonic {
+export default class EsbuildModule extends Tonic {
   async render () {
     const {
       src,

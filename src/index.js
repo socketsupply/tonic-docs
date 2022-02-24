@@ -1,5 +1,5 @@
-import Tonic from '@optoolco/tonic'
-import components from '@optoolco/components'
+import Tonic from '@socketsupply/tonic'
+import components from '@socketsupply/components'
 import examples from './example-setup.js'
 
 components(Tonic)

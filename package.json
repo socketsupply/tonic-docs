@@ -4,22 +4,24 @@
   "description": "",
   "main": "src/index.server.js",
   "scripts": {
-    "start": "./bin/server.js",
+    "start": "./bin/loader.js",
     "build": "./bin/build.js"
   },
   "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@optoolco/components": "^12.2.1",
-    "@optoolco/tonic": "^13.3.0",
-    "chart.js": "^2.9.4"
+    "@socketsupply/components": "13.2.5",
+    "@socketsupply/tonic": "14.1.1",
+    "chart.js": "^2.9.4",
+    "highlight.js": "^11.4.0",
+    "minimist": "^1.2.5",
+    "node-fetch": "^3.2.0"
   },
   "devDependencies": {
     "@pre-bundled/send": "^0.16.2-patch-1",
     "clean-css": "^4.2.3",
     "esbuild": "^0.8.36",
-    "highlight.js": "^10.5.0",
     "marked": "^4.0.10",
     "tonic-ssr": "^1.1.0"
   }

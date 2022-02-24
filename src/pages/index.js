@@ -1,5 +1,6 @@
 import Tonic from 'tonic-ssr'
 import head from './mixins/head.js'
+import logo from './mixins/logo.js'
 
 class MainPage extends Tonic {
   async render () {
@@ -10,23 +11,21 @@ class MainPage extends Tonic {
         <head>
           ${Tonic.unsafeRawString(head({
             title: 'Tonic',
-            description: 'A component framework',
+            description: 'A low-profile component framework',
             siteName: 'Tonic Framework',
             image: 'https://tonicframework.dev/images/tonic_preview.png',
             url: 'https://tonicframework.dev'
           }))}
 
-          <style-module src="src/styles/index.css">
-          </style-module>
+          <css-module src="src/styles/index.css">
+          </css-module>
         </head>
 
         <body>
           <aside>
             <toc-nav>
-              <a class="logo" href="https://github.com/optoolco/tonic">
-                <svg>
-                  <use xlink:href="images/logo.svg#tonic_logo">
-                </svg>
+              <a class="logo" href="https://github.com/socketsupply/tonic">
+                ${logo()}
               </a>
 
               <a href="#intro">Intro</a>
@@ -63,8 +62,8 @@ class MainPage extends Tonic {
             -------
           -->
 
-          <js-bundle
-            src="./src/index.client.js"
+          <esbuild-module
+            src="./src/index.js"
             dest="./build/bundle.js"
             url="/bundle.js"
             minify=${true}
@@ -72,7 +71,7 @@ class MainPage extends Tonic {
             format="esm"
             keep-names=${true}
             sourcemap="inline">
-          </js-bundle>
+          </esbuild-module>
 
           <!--script type="module" src="/tonic.js">
           </script-x->

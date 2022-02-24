@@ -5,7 +5,7 @@ The class should have at least one method named *render* which returns a templat
 of HTML.
 
 ```js
-import Tonic from '@optoolco/tonic'
+import Tonic from '@socketsupply/tonic'
 
 class MyGreeting extends Tonic {
   render () {

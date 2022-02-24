@@ -3,6 +3,7 @@ import path from 'node:path'
 
 import Tonic from 'tonic-ssr'
 import head from './mixins/head.js'
+import logo from './mixins/logo.js'
 
 const base = path.join('..', 'markdown', 'components')
 const __dirname = path.dirname(new URL(import.meta.url).pathname)
@@ -63,17 +64,15 @@ class ExamplePage extends Tonic {
             url: 'https://tonicframework.dev'
           }))}
 
-          <style-module src="src/styles/index.css">
-          </style-module>
+          <css-module src="src/styles/index.css">
+          </css-module>
         </head>
 
         <body>
           <aside>
             <toc-nav>
               <a class="logo" href="/">
-                <svg>
-                  <use xlink:href="images/logo.svg#tonic_logo">
-                </svg>
+                ${logo()}
               </a>
 
               ${toc}
@@ -83,17 +82,15 @@ class ExamplePage extends Tonic {
 
           <main id="examples">
             <a class="logo" href="/">
-              <svg>
-                <use xlink:href="images/logo.svg#tonic_logo">
-              </svg>
+              ${logo()}
             </a>
 
             ${content}
 
           </main>
 
-          <js-bundle
-            src="./src/index.client.js"
+          <esbuild-module
+            src="./src/index.js"
             dest="./build/bundle.js"
             url="/bundle.js"
             minify=${true}
@@ -101,7 +98,7 @@ class ExamplePage extends Tonic {
             minify-whitespace=${true}
             keep-names=${true}
             sourcemap="inline">
-          </js-bundle>
+          </esbuild-module>
 
           <tonic-sprite>
           </tonic-sprite>

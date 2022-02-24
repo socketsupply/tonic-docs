@@ -13,7 +13,7 @@ const closest = (node, fn) => {
   }
 }
 
-export default class StyleModule extends Tonic {
+export default class CssModule extends Tonic {
   async render () {
     const html = closest(this.node, n => n.tagName === 'html')
     const body = closest(this.node, n => n.tagName === 'body')
@@ -23,7 +23,7 @@ export default class StyleModule extends Tonic {
     // branches of the tree at run-time.
     //
     const i = body.childNodes.findIndex(node => {
-      return node.tagName === 'style-module'
+      return node.tagName === 'css-module'
     })
 
     body.childNodes.splice(i, 1)

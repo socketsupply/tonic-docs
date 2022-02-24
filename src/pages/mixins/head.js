@@ -9,9 +9,6 @@ const metaData = args => {
 
   return `
     <title>${title}</title>
-    <link rel="preload" href="fonts/Inter.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-    <link rel="preload" href="fonts/SourceCodePro-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="120x120">

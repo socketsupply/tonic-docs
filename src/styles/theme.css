@@ -1,8 +1,23 @@
+@font-face {
+  font-family: 'Body';
+  src: url('fonts/Inter-Light.woff2');
+}
+
+@font-face {
+  font-family: 'Header';
+  src: url('fonts/Inter-Black.woff2');
+}
+
+@font-face {
+  font-family: 'FiraMono-Regular';
+  src: url('fonts/FiraMono-Regular.woff2');
+}
+
 body {
-  --tonic-body: 'Inter', sans-serif;
-  --tonic-header: 'Inter-Black', sans-serif;
-  --tonic-subheader: 'Inter-Medium', sans-serif;
-  --tonic-monospace: 'Source Code Pro', monospace;
+  --tonic-body: 'Body', sans-serif;
+  --tonic-header: 'Header', sans-serif;
+  --tonic-subheader: 'Header', sans-serif;
+  --tonic-monospace: 'FiraMono-Regular', monospace;
 }
 
 body, *[theme="light"] {

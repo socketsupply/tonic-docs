@@ -2,8 +2,8 @@
 // This file contains code that sets up some interactions
 // for a few of the components on the example page.
 //
-import Tonic from '@optoolco/tonic'
-import { Windowed } from '@optoolco/components/windowed'
+import Tonic from '@socketsupply/tonic'
+import { Windowed } from '@socketsupply/components/windowed'
 
 export default () => {
   //

@@ -6,5 +6,5 @@ module (it mocks-up a few dom apis that tonic needs).
 
 Check out the [`code for this site`][1] for a real life example.
 
-[0]:https://github.com/optoolco/tonic-ssr
-[1]:https://github.com/optoolco/tonic-docs
+[0]:https://github.com/socketsupply/tonic-ssr
+[1]:https://github.com/socketsupply/tonic-docs

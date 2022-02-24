@@ -9,7 +9,7 @@ The `Tooltip` component creates a dynamically positioned pop-up tooltip filled w
     Hover over this text
   </span>
   <tonic-tooltip for="tonic-tooltip-example">
-    <img src="https://optool.co/images/horizontal-logo.png" width="180px">
+    <img src="https://socketsupply.co/images/monogram.png" width="180px">
   </tonic-tooltip>
 </div>
 
@@ -22,7 +22,7 @@ The element that will be used to trigger the display of the tooltip must contain
 <span id="tonic-tooltip-example">Hover over this text</span>
 
 <tonic-tooltip for="tonic-tooltip-example">
-  <img src="https://optool.co/images/horizontal-logo.png" width="100px">
+  <img src="https://socketsupply.co/images/monogram.png" width="100px">
 </tonic-tooltip>
 ```
 
