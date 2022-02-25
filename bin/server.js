@@ -121,7 +121,6 @@ export async function build (argv) {
 }
 
 async function main (argv) {
-
   port = process.env.PORT
     ? parseInt(process.env.PORT)
     : argv.p || port

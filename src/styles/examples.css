@@ -68,14 +68,8 @@ tonic-button.outline button:focus:hover {
   div.example {
     padding-right: 0;
   }
-  div.example ~ h2,
-  div.example ~ h3,
-  div.example ~ h4,
-  div.example ~ p,
-  div.example ~ code,
-  div.example ~ pre,
   div.example ~ table {
-    display: none;
+    display: table;
   }
 }
 
@@ -106,7 +100,7 @@ th {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 12px 10px 9px 10px;
+  padding: 12px 10px;
   background-color: var(--tonic-background);
   border-bottom: 1px solid var(--tonic-border);
   border-right: 1px solid var(--tonic-border);
