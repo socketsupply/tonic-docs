@@ -1,12 +1,14 @@
 #!/usr/bin/env node
+import minimist from 'minimist'
+import { build } from './server.js'
 
-import build from '../src/index.server.js'
-
-async function main () {
-  await Promise.all([
-    build('/'),
-    build('/example')
-  ])
+function main() {
+  return build(minimist(process.argv.slice(2)))
 }
 
-main()
+main().then(() => {
+  process.exit(0)
+}).catch(err => {
+  console.error(err)
+  process.exit(1)
+})

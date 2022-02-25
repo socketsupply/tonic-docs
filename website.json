@@ -174,7 +174,7 @@
         "deployed": false
       },
       "predeploy": {
-        "value": "",
+        "value": "npm run build",
         "deployed": false
       },
       "bucketName": {
@@ -186,7 +186,7 @@
         "deployed": false
       },
       "domain": {
-        "value": "",
+        "value": "tonicframework.dev",
         "deployed": false
       }
     },

@@ -73,7 +73,7 @@ async function handler (req, res) {
 async function teardown () {
   if (PENDING_REQUESTS.size > 0) {
     clearTimeout(die)
-    die = setTimeout(teardown, 256)
+    die = setTimeout(teardown, 512)
     return
   }
 
