@@ -48,21 +48,27 @@ const PENDING_REQUESTS = new Set()
 async function handler (req, res) {
   PENDING_REQUESTS.add(req)
 
-  res.on('finish', () => {
+  res.setMaxListeners(50)
+  res.on('finish', function _onFinishDelete () {
     PENDING_REQUESTS.delete(req)
   })
 
   const { pathname } = new URL(req.url, `${url}:${port}`)
 
   const onError = err => {
+    console.log('Got an error', err)
+
     if (err.status === 404) {
       req.url = '/'
       handler(req, res)
+    } else {
+      res.statusCode = err.status || 500
+      res.end('Internal Server Error')
     }
   }
 
   return send(req, pathname, opts)
-    .on('error', onError)
+    .once('error', onError)
     .on('end', () => {
       clearTimeout(die)
       die = setTimeout(teardown, 512)
@@ -96,10 +102,14 @@ export async function build (argv) {
     // add symbolic links to the source fonts and images
     //
     for (const dir of ['fonts', 'images', 'styles']) {
-      await fs.symlink(
-        path.join(base, 'src', dir),
-        path.join(dest, dir)
-      )
+      try {
+        await fs.symlink(
+          path.join(base, 'src', dir),
+          path.join(dest, dir)
+        )
+      } catch (err) {
+        console.error('Could not create symlink', err)
+      }
     }
   } catch {}
 
@@ -127,9 +137,9 @@ async function main (argv) {
 
   if (argv.url) url = argv.url
 
+  await build(argv)
   http.createServer(handler).listen(port, async () => {
     console.log(`listening on ${url}:${port}`)
-    await build(argv)
   })
 }
 

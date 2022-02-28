@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@pre-bundled/send": "^0.16.2-patch-1",
+    "@types/node": "17.0.21",
     "clean-css": "^4.2.3",
     "esbuild": "^0.8.36",
     "marked": "^4.0.10",
