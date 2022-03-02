@@ -5,7 +5,7 @@
   "main": "src/index.server.js",
   "scripts": {
     "start": "./bin/loader.js",
-    "build": "./bin/build.js"
+    "build": "./bin/build-cli.js"
   },
   "type": "module",
   "author": "",

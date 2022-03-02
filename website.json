@@ -16,7 +16,7 @@
         "value": true
       },
       "customLocalServer": {
-        "enabled": true,
+        "enabled": false,
         "value": "node ./bin/loader.js"
       },
       "apiRoute": {
@@ -26,7 +26,11 @@
         "value": null
       },
       "predeploy": {
-        "value": ""
+        "command": "npm run build",
+        "directory": [
+          "..",
+          "build"
+        ]
       },
       "bucketName": {
         "value": ""
