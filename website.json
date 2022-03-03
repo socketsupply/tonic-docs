@@ -190,6 +190,7 @@
       },
       "domain": {
         "value": "tonicframework.dev",
+        "hostedZoneId": "/hostedzone/Z102472634HUYI6EEHDUA",
         "deployed": false
       }
     },
