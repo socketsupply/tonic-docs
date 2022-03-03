@@ -148,21 +148,18 @@
   "633075417262": {
     "provider": "aws",
     "spa": "",
-    "lastDeployed": null,
+    "lastDeployed": "2022-03-03T20:51:53.417Z",
     "properties": {
       "relativeFolder": {
         "value": [
           ".."
-        ],
-        "deployed": false
+        ]
       },
       "cache": {
-        "value": 7800,
-        "deployed": false
+        "value": 7800
       },
       "gzip": {
-        "value": true,
-        "deployed": false
+        "value": true
       },
       "customLocalServer": {
         "enabled": false,
@@ -178,23 +175,32 @@
         "deployed": false
       },
       "predeploy": {
-        "value": "npm run build",
+        "command": "npm run build",
+        "directory": [
+          "..",
+          "build"
+        ],
         "deployed": false
       },
       "bucketName": {
-        "value": "",
-        "deployed": false
+        "value": "static.635e4eafbd5bf8.tonic-docs"
       },
       "bucketRegion": {
-        "value": "",
-        "deployed": false
+        "value": "us-east-1"
       },
       "domain": {
         "value": "tonicframework.dev",
         "deployed": false
       }
     },
-    "created": false
+    "createResponse": {
+      "created": true,
+      "bucketRegion": "us-east-1",
+      "ctime": 1646340713417,
+      "cloudfrontId": "E3T2L7U5MO2H60"
+    },
+    "cloudfrontId": "E3T2L7U5MO2H60",
+    "cloudfrontDomain": "E3T2L7U5MO2H60.cloudfront.net"
   },
   "104940042594": {
     "provider": "aws",
