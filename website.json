@@ -148,7 +148,7 @@
   "633075417262": {
     "provider": "aws",
     "spa": "",
-    "lastDeployed": "2022-03-03T20:51:53.417Z",
+    "lastDeployed": "2022-03-03T21:26:11.466Z",
     "properties": {
       "relativeFolder": {
         "value": [
@@ -190,8 +190,7 @@
       },
       "domain": {
         "value": "tonicframework.dev",
-        "hostedZoneId": "/hostedzone/Z102472634HUYI6EEHDUA",
-        "deployed": false
+        "hostedZoneId": "/hostedzone/Z102472634HUYI6EEHDUA"
       }
     },
     "createResponse": {
@@ -201,7 +200,7 @@
       "cloudfrontId": "E3T2L7U5MO2H60"
     },
     "cloudfrontId": "E3T2L7U5MO2H60",
-    "cloudfrontDomain": "E3T2L7U5MO2H60.cloudfront.net"
+    "cloudfrontDomain": "d3o710p4woajfw.cloudfront.net"
   },
   "104940042594": {
     "provider": "aws",
