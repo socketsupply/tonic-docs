@@ -246,5 +246,62 @@
       }
     },
     "created": false
+  },
+  "768180738139": {
+    "provider": "aws",
+    "spa": "",
+    "lastDeployed": "2022-03-02T22:09:10.314Z",
+    "properties": {
+      "relativeFolder": {
+        "value": [
+          ".."
+        ]
+      },
+      "cache": {
+        "value": 7800
+      },
+      "gzip": {
+        "value": true
+      },
+      "customLocalServer": {
+        "enabled": false,
+        "value": "node ./bin/loader.js",
+        "deployed": false
+      },
+      "apiRoute": {
+        "value": "",
+        "deployed": false
+      },
+      "apiRouteDestination": {
+        "value": null,
+        "deployed": false
+      },
+      "predeploy": {
+        "command": "npm run build",
+        "directory": [
+          "..",
+          "build"
+        ],
+        "deployed": false
+      },
+      "bucketName": {
+        "value": "static.20ce72d7bcb6a.tonic-docs"
+      },
+      "bucketRegion": {
+        "value": "us-east-1"
+      },
+      "domain": {
+        "value": "",
+        "deployed": false
+      }
+    },
+    "createResponse": {
+      "created": true,
+      "bucketRegion": "us-east-1",
+      "ctime": 1646258453172,
+      "cloudfrontId": "E2XIQSIRKIJRXP"
+    },
+    "cloudfrontId": "E2XIQSIRKIJRXP",
+    "cloudfrontDomain": "d1jogbci0m11je.cloudfront.net"
   }
 }
