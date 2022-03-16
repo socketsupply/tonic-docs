@@ -235,7 +235,8 @@
         "deployed": false
       },
       "predeploy": {
-        "value": "",
+        "directory": "",
+        "command": "",
         "deployed": false
       },
       "bucketName": {
@@ -256,7 +257,7 @@
   "768180738139": {
     "provider": "aws",
     "spa": "",
-    "lastDeployed": "2022-03-02T22:09:10.314Z",
+    "lastDeployed": "2022-03-04T18:17:25.310Z",
     "properties": {
       "relativeFolder": {
         "value": [
@@ -271,7 +272,7 @@
       },
       "customLocalServer": {
         "enabled": false,
-        "value": "node ./bin/loader.js",
+        "value": "",
         "deployed": false
       },
       "apiRoute": {
@@ -291,7 +292,7 @@
         "deployed": false
       },
       "bucketName": {
-        "value": "static.20ce72d7bcb6a.tonic-docs"
+        "value": "static.da6f009d06dc2.tonic-docs"
       },
       "bucketRegion": {
         "value": "us-east-1"
@@ -304,10 +305,11 @@
     "createResponse": {
       "created": true,
       "bucketRegion": "us-east-1",
-      "ctime": 1646258453172,
-      "cloudfrontId": "E2XIQSIRKIJRXP"
+      "ctime": 1646417792736,
+      "cloudfrontId": "EPV6TQL159GW6",
+      "cloudfrontDomain": "d28pq0m9139e1q.cloudfront.net"
     },
-    "cloudfrontId": "E2XIQSIRKIJRXP",
-    "cloudfrontDomain": "d1jogbci0m11je.cloudfront.net"
+    "cloudfrontId": "EPV6TQL159GW6",
+    "cloudfrontDomain": "d28pq0m9139e1q.cloudfront.net"
   }
 }
