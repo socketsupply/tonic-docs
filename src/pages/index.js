@@ -38,6 +38,7 @@ class MainPage extends Tonic {
               <a href="#styles">Styles</a>
               <a href="#ssr">SSR</a>
               <a href="#csp">CSP</a>
+              <a href="/examples.html">Examples</a>
             </toc-nav>
           </aside>
 
