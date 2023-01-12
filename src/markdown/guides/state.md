@@ -25,12 +25,12 @@ this.state = { color: 'red' }
 
 ---
 
-Setting state will *not* cause a component to re-render. This way you can
+Setting the state will *not* cause a component to re-render. This way you can
 make incremental updates. Components can be updated independently. And
 rendering only happens only when necessary.
 
 Remember to clean up! States are just a set of key-value pairs on the `Tonic`
 object. So if you create temporary components that use state, clean up their
-state after you delete them. For example, if a list component with thousands
-of temporary child elements all use state, I should delete their state after
+state after you delete them. For example, if a list of a component with thousands
+of temporary child elements all uses state, I should delete their state after
 they get destroyed, `delete Tonic._states[someRandomId]`.
