@@ -17,7 +17,7 @@
       },
       "customLocalServer": {
         "enabled": true,
-        "value": ""
+        "value": "node ./bin/loader.js"
       },
       "apiRoute": {
         "value": ""
@@ -30,7 +30,7 @@
           "..",
           "build"
         ],
-        "command": "node bin/build-cli.js"
+        "command": ""
       },
       "bucketName": {
         "value": ""
@@ -311,104 +311,5 @@
     },
     "cloudfrontId": "EPV6TQL159GW6",
     "cloudfrontDomain": "d28pq0m9139e1q.cloudfront.net"
-  },
-  "368772710094": {
-    "provider": "aws",
-    "spa": "",
-    "lastDeployed": "2022-06-20T18:14:18.295Z",
-    "properties": {
-      "relativeFolder": {
-        "value": [
-          ".."
-        ]
-      },
-      "cache": {
-        "value": 7800
-      },
-      "gzip": {
-        "value": true
-      },
-      "customLocalServer": {
-        "enabled": true,
-        "value": "node ./bin/loader.js"
-      },
-      "apiRoute": {
-        "value": ""
-      },
-      "apiRouteDestination": {
-        "value": null
-      },
-      "predeploy": {
-        "directory": [
-          "..",
-          "build"
-        ],
-        "command": "npm run build",
-        "deployed": false
-      },
-      "bucketName": {
-        "value": "static.1090c6f061b1d.tonic-docs"
-      },
-      "bucketRegion": {
-        "value": "us-east-1"
-      },
-      "domain": {
-        "value": ""
-      }
-    },
-    "createResponse": {
-      "created": true,
-      "bucketRegion": "us-east-1",
-      "ctime": 1655748797192,
-      "cloudfrontId": "E2FI60SAGPWS7V",
-      "cloudfrontDomain": "d11ibp4jvmq53w.cloudfront.net"
-    },
-    "cloudfrontId": "E2FI60SAGPWS7V",
-    "cloudfrontDomain": "d11ibp4jvmq53w.cloudfront.net"
-  },
-  "305103105464": {
-    "provider": "aws",
-    "spa": "",
-    "lastDeployed": null,
-    "properties": {
-      "relativeFolder": {
-        "value": [
-          ".."
-        ]
-      },
-      "cache": {
-        "value": 7800
-      },
-      "gzip": {
-        "value": true
-      },
-      "customLocalServer": {
-        "enabled": false,
-        "value": "node ./bin/loader.js"
-      },
-      "apiRoute": {
-        "value": ""
-      },
-      "apiRouteDestination": {
-        "value": null
-      },
-      "predeploy": {
-        "directory": [
-          "..",
-          "build"
-        ],
-        "command": "node bin/build-cli.js"
-      },
-      "bucketName": {
-        "value": ""
-      },
-      "bucketRegion": {
-        "value": ""
-      },
-      "domain": {
-        "value": ""
-      }
-    },
-    "created": false
   }
 }
