@@ -1,6 +1,6 @@
 # Properties
 
-`Props` are properties that are passed to the component in the form of html
+`Props` are properties that are passed to the component in the form of HTML
 attributes. For example...
 
 ```js
@@ -16,13 +16,13 @@ class MyApp extends Tonic {
 
 ---
 
-Properties added to a component appear on the `this.props` object.
+Properties added to a component appear on `this.props` object.
 
 ---
 
 Tonic has no templating language, it uses HTML! But since HTML only
 understands string values, we need some help to pass more complex
-values to a component, for that we use `this.html`.
+values to a component, and for that we use `this.html`.
 
 ```js
 const foo = {

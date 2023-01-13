@@ -26,7 +26,7 @@ function MyGreeting () {
 
 ---
 
-The html tag for your component will match the class or function name.
+The HTML tag for your component will match the class or function name.
 
 > <i><b>Note</b>: Tonic is a thin wrapper around `web components`. Web
 > components require a name with two or more parts. So your class name should
@@ -77,7 +77,7 @@ function will be inserted into the component tag.
 </html>
 ```
 
-A component (or its render function) may be `async` or an `async generator`.
+A component (or its render function) may be an `async` or an `async generator`.
 
 ```js
 class GithubUrls extends Tonic {

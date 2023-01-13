@@ -67,12 +67,12 @@ Each event handler method will receive the plain old Javascript `event` object.
 This object contains a `target` property, the exact element that was clicked.
 The `path` property is an array of elements containing the exact hierarchy.
 
-Some helpful native DOM APIs for testing properties of an element:
+Some helpful native DOM APIs for testing the properties of an element:
 -   [`Element.matches(String)`][6] tests if an element matches a selector
 -   [`Element.closest(String)`][7] finds the closest ancestor from the element
 that matches the given selector
 
-Tonic also provides a helper function which checks if the element matches the
+Tonic also provides a helper function that checks if the element matches the
 selector, and if not, tries to find the closest match.
 
 ```js
@@ -111,7 +111,7 @@ class ParentElement extends Tonic {
 }
 ```
 
-The event object has a [`Event.stopPropagation()`][8] method that is useful for
+The event object has an [`Event.stopPropagation()`][8] method that is useful for
 preventing an event from bubbling up to parent components. You may also be
 interested in the [`Event.preventDefault()`][9] method.
 
