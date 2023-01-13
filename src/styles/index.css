@@ -179,10 +179,6 @@ a {
   width: fit-content;
 }
 
-a:not(.logo) {
-  margin: 10px 25%;
-}
-
 aside .logo {
   display: block;
   width: 50%;
