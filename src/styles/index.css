@@ -267,6 +267,11 @@ main .logo svg {
     display: block;
   }
 
+  div.title h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
   .checklists main {
     padding: 50px 10%;
   }
