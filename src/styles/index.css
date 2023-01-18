@@ -99,7 +99,7 @@ code {
 
 pre {
   padding: 14px;
-  overflow: overlay;
+  overflow: auto;
 }
 
 aside {
