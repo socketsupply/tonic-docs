@@ -99,7 +99,7 @@ code {
 
 pre {
   padding: 14px;
-  overflow: overlay;
+  overflow: auto;
 }
 
 aside {
@@ -265,6 +265,11 @@ main .logo svg {
 @media (max-width: 768px) {
   body {
     display: block;
+  }
+
+  div.title h1 {
+    font-size: 48px;
+    line-height: 48px;
   }
 
   .checklists main {
