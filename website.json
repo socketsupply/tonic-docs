@@ -148,7 +148,7 @@
   "633075417262": {
     "provider": "aws",
     "spa": "",
-    "lastDeployed": "2022-03-03T21:28:53.658Z",
+    "lastDeployed": "2023-01-23T12:56:38.770Z",
     "properties": {
       "relativeFolder": {
         "value": [
@@ -311,5 +311,50 @@
     },
     "cloudfrontId": "EPV6TQL159GW6",
     "cloudfrontDomain": "d28pq0m9139e1q.cloudfront.net"
+  },
+  "305103105464": {
+    "provider": "aws",
+    "spa": "",
+    "lastDeployed": null,
+    "properties": {
+      "relativeFolder": {
+        "value": [
+          ".."
+        ]
+      },
+      "cache": {
+        "value": 7800
+      },
+      "gzip": {
+        "value": true
+      },
+      "customLocalServer": {
+        "enabled": true,
+        "value": "node ./bin/loader.js"
+      },
+      "apiRoute": {
+        "value": ""
+      },
+      "apiRouteDestination": {
+        "value": null
+      },
+      "predeploy": {
+        "directory": [
+          "..",
+          "build"
+        ],
+        "command": ""
+      },
+      "bucketName": {
+        "value": ""
+      },
+      "bucketRegion": {
+        "value": ""
+      },
+      "domain": {
+        "value": ""
+      }
+    },
+    "created": false
   }
 }
