@@ -29,10 +29,10 @@ The `tonic-tabs` and `tonic-tab-panel` components create a tab list that activat
 ## Code
 
 The tabs are grouped under the `tonic-tabs` component. Each tab should be a
-`tonic-tab` element, and is associated to a `tonic-tab-panel` id with the
+`tonic-tab` element, and is associated with a `tonic-tab-panel` id with the
 `for` element.
 
-The selected tab should specified by providing an `id` as the value
+The selected tab should be specified by providing an `id` as the value
 for the `selected` attribute on the `tonic-tabs` component.
 
 #### HTML
@@ -115,4 +115,4 @@ for the `selected` attribute on the `tonic-tabs` component.
 | :--- | :--- |
 | `tabvisible` | Emitted when a tab becomes visible. Contains `event.detail.id` for which tab is visible. |
 | `tabhidden` | Emitted when a tab becomes hidden. Contains `event.detail.id` for which tab is hidden. |
-| `tabvisible`, `tabhidden` | Emitted when a tab is changed and get triggered both from click & keyboard events. |
+| `tabvisible`, `tabhidden` | Emitted when a tab is changed and gets triggered both from click & keyboard events. |

@@ -1,5 +1,5 @@
 # Router
-The `Router` component will render its children components if the browser's current url matches its `path` property. This component will detect `pushstate`, `popstate` and `replacestate` events and re-render with the attributes of the url as props.
+The `Router` component will render its children components if the browser's current URL matches its `path` property. This component will detect `pushstate`, `popstate`, and `replacestate` events and re-render with the attributes of the URL as props.
 
 ## Demo
 

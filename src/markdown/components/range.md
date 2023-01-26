@@ -1,6 +1,6 @@
 # Range
 
-The `Range` component creates a range input, or slider.
+The `Range` component creates a range input or slider.
 
 ## Demo
 
