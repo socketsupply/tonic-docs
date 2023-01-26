@@ -44,7 +44,7 @@ This demo generates the data after you click the overlay. Generating 500000 rows
 | `load(Array)` | Loads an array of data. |
 | `loaded()` | Called after the load function has been called. |
 | `getRows()` | Returns an array of all rows that are currently loaded. |
-| `getRow(Number)` | Get a row of data (returns an available promise). |
+| `getRow(Number)` | Get a row of data (returns an awaitable promise). |
 
 ### Instance Methods For Implementers
 | Method | Description |
