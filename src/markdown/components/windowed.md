@@ -1,7 +1,7 @@
 # Windowed
-A base class used for creating a windowed component.
+A base class is used for creating a windowed component.
 
-If you need to render large data sets (hundreds of thousands of rows for example), you can use a technique known as `windowing`. This technique renders a subset of your data, while giving the user the impression that all the data
+If you need to render large data sets (hundreds of thousands of rows for example), you can use a technique known as `windowing`. This technique renders a subset of your data while giving the user the impression that all the data
 has been rendered.
 
 ## Demo
@@ -51,4 +51,4 @@ This demo generates the data after you click the overlay. Generating 500000 rows
 | :--- | :--- |
 | `render()` | Render the component, calling `super.render()` will render the row container structure. |
 | `renderEmptyState()` | If implemented, should return a structure that represents a state where there are no rows. |
-| `renderLoadingState()` | If implemented, should return a structure that represents a state where has not yet completed. |
+| `renderLoadingState()` | If implemented, should return a structure that represents a state that has not yet been  completed. |

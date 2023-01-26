@@ -1,7 +1,7 @@
 # Dialog
 
 All dialogs have different use cases. Anything could go inside them. So this
-class tries to accomodate a wide range of use cases by being the minimum of
+class tries to accommodate a wide range of use cases by being the minimum of
 what is needed to start with.
 
 > *__Note:__ This component requires the `tonic-sprite` component.*

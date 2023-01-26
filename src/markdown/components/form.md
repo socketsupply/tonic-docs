@@ -2,7 +2,7 @@
 
 The `form` component implements `input` and `change` events that collect
 the values of any child component that has the `data-key` attribute. The values
-colected are stored on the `tonic-form` state and accessible from the `value`
+collected are stored on the `tonic-form` state and accessible from the `value`
 property.
 
 The value of `data-key` expects a `dot notation` to determine what the value
@@ -81,7 +81,7 @@ assert(form.value === expected)
 | Property | Type | Description | Default |
 | :--- | :--- | :--- | :--- |
 | `id` | *string* | Input with `id` attribute. <span class="req">required</span> | |
-| `fill` | *boolean* | If specified, upon render, any child-element value that that specifies `data-key` will be filled with the form's coresponding state value unless a value is specified as a property. |
+| `fill` | *boolean* | If specified, upon render, any child-element value that specifies `data-key` will be filled with the form's corresponding state value unless a value is specified as a property. |
 
 ### Instance Methods
 

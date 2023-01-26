@@ -88,7 +88,7 @@ for **TonicAccordion**
 | Property | Type | Description | Default |
 | :--- | :--- | :--- | :--- |
 | `multiple` | *number* | Allow multiple sections to be expanded at one time. | `0` |
-| `theme` | *string* | Adds a theme color (`light`, `dark` or whatever is defined in your base CSS. | `light` |
+| `theme` | *string* | Adds a theme color (`light`, `dark`, or whatever is defined in your base CSS. | `light` |
 
 for **TonicAccordionSection**
 
